@@ -9,5 +9,3 @@ G=$(pwd)
 cd ~/Downloads/Video-Game-Music
 find . -name '*.7z' -exec 7za x '{}' \;
 $G/gme2mp3
-mv NES/*mp3 t
-du -hac t
