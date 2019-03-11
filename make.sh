@@ -9,3 +9,8 @@ G=$(pwd)
 cd ~/Downloads/Video-Game-Music
 find . -name '*.7z' -exec 7za x '{}' \;
 $G/gme2mp3
+
+# find . -name '*.mp3' -exec rm '{}' \;
+# cd NES; $G/gme2mp3; cd ..
+# cd SNES; $G/gme2mp3; cd ..
+# find . -name '*.mp3' -print0 | xargs -0 id3info
