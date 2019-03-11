@@ -94,7 +94,6 @@ void scan_file ( fs::path src ) {
 
     gme_free_info( info );
     fout.close();
-
     lame_close( lame ); }
 
   gme_delete( gme ); }

@@ -1,0 +1,19 @@
+gme2mp3 - game music to MP3
+
+Scans the current directory (recursively) for SNES (.spc) and NES
+music (.nsfe) and converts to MP3s using lame. Requires lame and gme,
+plus the new C++17 filesystem library.
+
+SNES files are assumed to be in the format:
+
+Game/Track. Title.spc
+
+NES files are assumed to have all of their metadata correctly
+specified in the .nsfe archive.
+
+The result MP3 is stereo 44.1KHz with level 9 VBR. (This is the lowest
+level of encoding the lame offers. In my experience, it sounds perfect
+because these computers had such bad sound to begin with.)
+
+It does not create any intermediate files (i.e. no WAV) which is one
+of the reasons I wrote it.
